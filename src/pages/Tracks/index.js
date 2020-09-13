@@ -13,7 +13,7 @@ const TracksPage = () => {
 
   return (
     <Card>
-      <Container>
+      <Container data-testid="tracks-page">
         <ArtistName>{artistName}</ArtistName>
         {isLoading && <p>Loading Tracks...</p>}
         {error && <p>Error!</p>}

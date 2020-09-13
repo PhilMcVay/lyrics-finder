@@ -18,14 +18,14 @@ const TrackList = ({ trackList = [], artistName }) => {
           onChange={handeSearchFilter}
         />
       )}
-      <TrackListContainer>
+      <TrackListContainer data-testid="tracks-list">
         {trackList
           .filter((track) =>
             track.toLowerCase().includes(searchFilter.toLowerCase().trim())
           )
           .sort()
           .map((track) => (
-            <Track track={track} artistName={artistName} />
+            <Track key={track} track={track} artistName={artistName} />
           ))}
       </TrackListContainer>
     </>

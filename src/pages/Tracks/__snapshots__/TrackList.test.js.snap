@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TrackList> Should not display the filter search if no tracks are provided 1`] = `
+<ul
+  class="sc-dlnjPT dWicHX"
+  data-testid="tracks-list"
+/>
+`;
