@@ -33,3 +33,10 @@ Runs all tests and prints out the coverage. Also generates a coverage report whi
 ###### `yarn build`
 
 Builds aand bundles the application for production release
+
+### Libraries Used
+
+- axios - Data Fetching
+- react-query - Hooks library for fetching, caching and updating asynchronous data in React
+- react-router - Client Side Routing
+- styled-component - CSS-in-JS library for styling
