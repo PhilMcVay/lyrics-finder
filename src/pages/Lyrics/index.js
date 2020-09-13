@@ -20,7 +20,7 @@ const LyricsPage = () => {
         </ArtistName>
         {isLoading && <p>Loading Lyrics...</p>}
         {error && <p>No lyrics found for {track}</p>}
-        {lyrics && <Lyrics lyrics={lyrics} />}
+        {lyrics && <Lyrics data-testid="lyrics" lyrics={lyrics} />}
       </Container>
     </Card>
   );

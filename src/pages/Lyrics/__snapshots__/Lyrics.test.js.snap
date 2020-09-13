@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Lyrics> Should format the lyrics correctly 1`] = `
+<section
+  class="sc-bdnylx eBbEUU"
+  data-testid="lyrics"
+>
+  <p
+    class="sc-gtssRu fLfXMm"
+  >
+    line 1
+  </p>
+  <p
+    class="sc-gtssRu fLfXMm"
+  >
+    line 2
+  </p>
+  <p
+    class="sc-gtssRu fLfXMm"
+  >
+    line 3
+  </p>
+  <p
+    class="sc-gtssRu fLfXMm"
+  >
+    line 4
+  </p>
+  <br />
+  <p
+    class="sc-gtssRu fLfXMm"
+  >
+    line 5
+  </p>
+  <p
+    class="sc-gtssRu fLfXMm"
+  >
+    line 6
+  </p>
+  <p
+    class="sc-gtssRu fLfXMm"
+  >
+    line 7
+  </p>
+  <p
+    class="sc-gtssRu fLfXMm"
+  >
+    line 8
+  </p>
+</section>
+`;

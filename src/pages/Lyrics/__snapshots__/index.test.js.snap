@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LyricsPage> Should fetch the song lyrics for the artist and track from the url 1`] = `
+<section
+  class="sc-eCApGN duYvBr"
+  data-testid="lyrics"
+>
+  <p
+    class="sc-jSFkmK eaPXqI"
+  >
+    line 1
+  </p>
+  <p
+    class="sc-jSFkmK eaPXqI"
+  >
+    line 2
+  </p>
+  <p
+    class="sc-jSFkmK eaPXqI"
+  >
+    line 3
+  </p>
+  <p
+    class="sc-jSFkmK eaPXqI"
+  >
+    line 4
+  </p>
+  <br />
+  <p
+    class="sc-jSFkmK eaPXqI"
+  >
+    line 5
+  </p>
+  <p
+    class="sc-jSFkmK eaPXqI"
+  >
+    line 6
+  </p>
+  <p
+    class="sc-jSFkmK eaPXqI"
+  >
+    line 7
+  </p>
+  <p
+    class="sc-jSFkmK eaPXqI"
+  >
+    line 8
+  </p>
+</section>
+`;

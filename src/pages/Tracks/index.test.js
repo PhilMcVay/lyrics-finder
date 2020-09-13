@@ -7,7 +7,7 @@ import TracksPage from "./index";
 
 const mockArtistData = {
   data: {
-    artists: [{ id: "1234", name: "artist-name" }],
+    artists: [{ id: "1234", name: "The Police" }],
   },
 };
 
@@ -46,7 +46,7 @@ describe("<TracksPage>", () => {
     const trackList = await waitForElement(() => screen.getByText("A Song"));
 
     // Displays Artist Name
-    expect(screen.getByText("artist-name")).toBeInTheDocument();
+    expect(screen.getByText("The Police")).toBeInTheDocument();
 
     // Display all songs
     expect(screen.getByText("A Song")).toBeInTheDocument();

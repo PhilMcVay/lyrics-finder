@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import Header from "./shared/Header";
 
@@ -20,6 +20,7 @@ ReactDOM.render(
         <Route path="/:artistName/:track">
           <LyricsPage />
         </Route>
+        <Redirect from="*" to="/" />
       </Switch>
     </BrowserRouter>
     <GlobalStyles />
