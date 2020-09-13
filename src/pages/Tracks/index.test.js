@@ -45,6 +45,9 @@ describe("<TracksPage>", () => {
 
     const trackList = await waitForElement(() => screen.getByText("A Song"));
 
+    // Displays Artist Name
+    expect(screen.getByText("artist-name")).toBeInTheDocument();
+
     // Display all songs
     expect(screen.getByText("A Song")).toBeInTheDocument();
     expect(screen.getByText("B Song")).toBeInTheDocument();
