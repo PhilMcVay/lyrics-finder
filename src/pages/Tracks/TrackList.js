@@ -24,8 +24,12 @@ const TrackList = ({ trackList = [], artistName }) => {
             track.toLowerCase().includes(searchFilter.toLowerCase().trim())
           )
           .sort()
-          .map((track) => (
-            <Track key={track} track={track} artistName={artistName} />
+          .map((track, index) => (
+            <Track
+              key={`${track}-${index}`}
+              track={track}
+              artistName={artistName}
+            />
           ))}
       </TrackListContainer>
     </>

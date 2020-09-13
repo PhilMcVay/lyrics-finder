@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.section`
   width: 45vw;
@@ -8,3 +9,12 @@ export const Container = styled.section`
 `;
 
 export const ArtistName = styled.h3``;
+
+export const BackLink = styled(Link)`
+  height: auto;
+  color: darkblue;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;

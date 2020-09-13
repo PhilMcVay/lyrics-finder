@@ -2,9 +2,9 @@ import React from "react";
 import { useTrackList } from "../../hooks/useTrackList";
 
 import Card from "../../shared/Card";
-import TrackList from "./TrackList";
+import { Container, ArtistName } from "../../shared/styles/";
 
-import { Container, ArtistName } from "./index.styles";
+import TrackList from "./TrackList";
 
 const TracksPage = () => {
   const { artistName, trackList, isLoading, error } = useTrackList(
