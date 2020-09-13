@@ -1,9 +1,11 @@
 import React from "react";
 
+import { HeaderContainer, HeaderText } from "./Header.style";
+
 const Header = () => (
-  <header>
-    <h1>Lyrics Finder</h1>
-  </header>
+  <HeaderContainer>
+    <HeaderText>Lyrics Finder</HeaderText>
+  </HeaderContainer>
 );
 
 export default Header;
