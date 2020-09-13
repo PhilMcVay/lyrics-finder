@@ -1,9 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TracksPage> Should fetch the list of tracks for an artist and display them in alphabetical order 1`] = `
-<a
-  href="/The Police/A Song"
+<ul
+  class="sc-gKAblj dgCImu"
+  data-testid="tracks-list"
 >
-  A Song
-</a>
+  <li
+    class="sc-eCApGN dyTrPi"
+  >
+    <a
+      href="/The Police/A Song"
+    >
+      A Song
+    </a>
+  </li>
+  <li
+    class="sc-eCApGN dyTrPi"
+  >
+    <a
+      href="/The Police/B Song"
+    >
+      B Song
+    </a>
+  </li>
+  <li
+    class="sc-eCApGN dyTrPi"
+  >
+    <a
+      href="/The Police/C Song"
+    >
+      C Song
+    </a>
+  </li>
+</ul>
 `;

@@ -40,13 +40,13 @@ describe("<TracksPage>", () => {
       </BrowserRouter>
     );
 
+    // Displays Artist Name
+    expect(screen.getByText("The Police")).toBeInTheDocument();
+
     // Display loading state while fetching data
     expect(screen.getByText("Loading Tracks...")).toBeInTheDocument();
 
     const trackList = await waitForElement(() => screen.getByText("A Song"));
-
-    // Displays Artist Name
-    expect(screen.getByText("The Police")).toBeInTheDocument();
 
     // Display all songs
     expect(screen.getByText("A Song")).toBeInTheDocument();
@@ -54,6 +54,6 @@ describe("<TracksPage>", () => {
     expect(screen.getByText("C Song")).toBeInTheDocument();
 
     // Display list in alphabetical order
-    expect(trackList).toMatchSnapshot();
+    expect(screen.getByTestId("tracks-list")).toMatchSnapshot();
   });
 });
