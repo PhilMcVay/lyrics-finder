@@ -11,6 +11,8 @@ const LyricsPage = () => {
   const { artistName, track } = useParams();
   const { lyrics, isLoading, error } = useLyrics(artistName, track);
 
+  const noLyrics = lyrics === ""
+
   return (
     <Card>
       <Container data-testid="lyrics-page">
@@ -19,7 +21,7 @@ const LyricsPage = () => {
           {artistName} - {track}
         </ArtistName>
         {isLoading && <p>Loading Lyrics...</p>}
-        {error && <p>No lyrics found for {track}</p>}
+        {(error || noLyrics) && <p>No lyrics found for {track}</p>}
         {lyrics && <Lyrics data-testid="lyrics" lyrics={lyrics} />}
       </Container>
     </Card>
